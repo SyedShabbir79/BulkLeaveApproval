@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HEIW.LeaveApproverBatch.Domain", "HEIW.LeaveApproverBatch.Domain", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		ApprovalCancellationInfo.cs = ApprovalCancellationInfo.cs
+		BatchRequest.cs = BatchRequest.cs
+		BatchResult.cs = BatchResult.cs
+		BatchRunLog.cs = BatchRunLog.cs
+		ReplaceScope.cs = ReplaceScope.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HEIW.LeaveApproverBatch.Functions", "HEIW.LeaveApproverBatch.Functions", "{1BC03DA0-381E-429F-8832-7EA13F6BF9B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HEIW.LeaveApproverBatch.Infrastructure", "HEIW.LeaveApproverBatch.Infrastructure", "{94FDB081-3D1B-484F-9D5F-E53CDFEF7146}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HEIW.LeaveApproverBatch.Application", "HEIW.LeaveApproverBatch.Application", "{8CE5E2FD-752D-4B4B-B5DA-86C5977F5F4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstractions", "Abstractions", "{B7ACE1FF-49D7-4819-BC0B-F8B0A2171A92}"
+	ProjectSection(SolutionItems) = preProject
+		IApprovalCancellationService.cs = IApprovalCancellationService.cs
+		IClock.cs = IClock.cs
+		IDataverseRepository.cs = IDataverseRepository.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UseCases", "UseCases", "{3F954428-4724-4713-8940-F6A96DF7DB3A}"
+	ProjectSection(SolutionItems) = preProject
+		RunBatchReplacement.cs = RunBatchReplacement.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Options", "Options", "{4CA70904-A785-4515-878A-3033AD1EFF0B}"
+	ProjectSection(SolutionItems) = preProject
+		BatchOptions.cs = BatchOptions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dataverse", "Dataverse", "{C081BD0A-1401-44A8-AEF9-E32AB72CE43F}"
+	ProjectSection(SolutionItems) = preProject
+		DataverseClientFactory.cs = DataverseClientFactory.cs
+		DataverseConstants.cs = DataverseConstants.cs
+		DataverseRepository.cs = DataverseRepository.cs
+		ExecuteMultipleHelper.cs = ExecuteMultipleHelper.cs
+		FetchXml.cs = FetchXml.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Approvals", "Approvals", "{DC2D191E-51C6-4A97-93D2-1C6CAC384C30}"
+	ProjectSection(SolutionItems) = preProject
+		ApprovalCancellationService.cs = ApprovalCancellationService.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Time", "Time", "{09557EF3-7FC4-4840-9576-14601E49FD15}"
+	ProjectSection(SolutionItems) = preProject
+		SystemClock.cs = SystemClock.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{49F1C60B-73D2-468C-9DFD-31E3C18694B8}"
+	ProjectSection(SolutionItems) = preProject
+		LoggingExtensions.cs = LoggingExtensions.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveApproverBatch", "LeaveApproverBatch\LeaveApproverBatch.csproj", "{8BD98674-95A5-665E-A57E-843EE47A270C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD98674-95A5-665E-A57E-843EE47A270C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD98674-95A5-665E-A57E-843EE47A270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD98674-95A5-665E-A57E-843EE47A270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD98674-95A5-665E-A57E-843EE47A270C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7ACE1FF-49D7-4819-BC0B-F8B0A2171A92} = {8CE5E2FD-752D-4B4B-B5DA-86C5977F5F4C}
+		{3F954428-4724-4713-8940-F6A96DF7DB3A} = {8CE5E2FD-752D-4B4B-B5DA-86C5977F5F4C}
+		{4CA70904-A785-4515-878A-3033AD1EFF0B} = {8CE5E2FD-752D-4B4B-B5DA-86C5977F5F4C}
+		{C081BD0A-1401-44A8-AEF9-E32AB72CE43F} = {94FDB081-3D1B-484F-9D5F-E53CDFEF7146}
+		{DC2D191E-51C6-4A97-93D2-1C6CAC384C30} = {94FDB081-3D1B-484F-9D5F-E53CDFEF7146}
+		{09557EF3-7FC4-4840-9576-14601E49FD15} = {94FDB081-3D1B-484F-9D5F-E53CDFEF7146}
+		{49F1C60B-73D2-468C-9DFD-31E3C18694B8} = {94FDB081-3D1B-484F-9D5F-E53CDFEF7146}
+		{8BD98674-95A5-665E-A57E-843EE47A270C} = {1BC03DA0-381E-429F-8832-7EA13F6BF9B4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E880728-3DA5-4C2C-AFAB-7F0F3F70370F}
+	EndGlobalSection
+EndGlobal
